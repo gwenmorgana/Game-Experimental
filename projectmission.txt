@@ -1,0 +1,22 @@
+By Catbox and J. River
+
+------------ start 12-25-18
+-Game Experimental-
+
+Physical Integration
+Save code with specialized data
+  - Transfers to other platforms
+  - a Tangible solution to a digital map
+
+Features:
+
+Class selection
+Faction Levels
+Stats - ??
+Bane - Granted from victory
+randomly generated play map
+card Integration
+deck building
+Artifacts
+
+----------- end 12-25-18
