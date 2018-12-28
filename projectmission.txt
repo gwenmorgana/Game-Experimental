@@ -20,3 +20,30 @@ deck building
 Artifacts
 
 ----------- end 12-25-18
+
+12-27-18 development meeting: COncepts
+with Catbox and J.River
+
+
+ Savecodes?
+ Historical theme - ie viking village / china. - mongols
+ kickstart
+ economy, fighting, trading.
+
+ overhead city builder style
+ simulate for of war
+
+ unlimited moves during turn time / hidden from others
+ build economy
+
+ codes and scanning qr etc(barcode)
+
+ economy tracked by data token.
+
+ simple token cost. economy = token based (Sovereigns? etc)
+ villager = 1 token
+ soldier = 2 token
+ siege machine = 4 token
+ siege machine is only effective vs castles.
+
+--------------------end 12-27-18 meeting.
