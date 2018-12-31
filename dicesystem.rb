@@ -1,8 +1,15 @@
 # This is the base module for handling dice within the game interface. -Pre UI building.
 # The system is meant to denote not only standard hit check, but also integrate critical strikes and critical fails
 
+# experimental crit modifier
+class Crit
+  puts "CRIT PH"
+end
+
+
+
 # create the Dice class
-class Dice
+class Dice < Crit
   def initialize(sided)
     @sided = sided
   end
@@ -34,6 +41,7 @@ TEN_SIDED_DIE = Dice.new(10)
 TWENTY_SIDED_DIE = Dice.new(20)
 
 # initiate console interface and selection.
+# this will eventually be replaces by a UI of sorts
 puts "Welcome to Dice Roller."
 puts "Please select the Die of your choice to roll."
 puts "1.) Six Sided"
@@ -45,7 +53,8 @@ print "Dice:> "
 input = $stdin.gets.chomp
 if input == "1"
   puts "Rolling a Six-sided Die..."
-  SIX_SIDED_DIE.roll
+  puts SIX_SIDED_DIE.roll
 else
   puts "Please enter a valid number!"
 end
+# need to add quantity of dice via variable
