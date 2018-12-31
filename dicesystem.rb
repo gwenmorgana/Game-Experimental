@@ -22,7 +22,7 @@ class Dice
       new_dice_result = dice_result + roll
       dice_result = new_dice_result
     end
-    total
+    dice_result
   end
 end
 
@@ -42,3 +42,10 @@ puts "3.) Ten Sided"
 puts "4.) Twenty Sided\n\n"
 print "Dice:> "
 # Initiate user selection
+input = $stdin.gets.chomp
+if input == "1"
+  puts "Rolling a Six-sided Die..."
+  SIX_SIDED_DIE.roll
+else
+  puts "Please enter a valid number!"
+end
