@@ -3,7 +3,7 @@
 
 # experimental crit modifier
 class Crit
-  puts "CRIT PH"
+  puts "Critical Dice Placeholder loads successfully."
 end
 
 
@@ -54,7 +54,16 @@ input = $stdin.gets.chomp
 if input == "1"
   puts "Rolling a Six-sided Die..."
   puts SIX_SIDED_DIE.roll
-else
+elsif input == "2"
+  puts "Rolling an Eight-sided Die."
+  puts EIGHT_SIDED_DIE.roll
+elsif input == "3"
+  puts "Rolling a Ten-sided Die"
+  puts TEN_SIDED_DIE.roll
+elsif input == "4"
+  puts "Rolling a Twenty-sided Die"
+  puts TWENTY_SIDED_DIE.roll
+  else
   puts "Please enter a valid number!"
 end
 # need to add quantity of dice via variable
