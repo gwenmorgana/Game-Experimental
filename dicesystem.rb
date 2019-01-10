@@ -6,6 +6,8 @@ class Crit
   puts "Critical Dice Placeholder loads successfully."
 end
 
+class Rollmodifier
+  puts "Roll Modifier"
 
 
 # create the Dice class
