@@ -8,6 +8,7 @@ end
 
 class Rollmodifier
   puts "Roll Modifier"
+end
 
 
 # create the Dice class
