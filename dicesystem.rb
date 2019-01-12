@@ -10,6 +10,10 @@ class Rollmodifier
   puts "Roll Modifier"
 end
 
+class Selector
+  @@die = {
+    'six_sided' = 
+  }
 
 # create the Dice class
 class Dice < Crit
