@@ -1,9 +1,42 @@
 # This is the base module for handling dice within the game interface. -Pre UI building.
 # The system is meant to denote not only standard hit check, but also integrate critical strikes and critical fails
 
+class Mainmenu
+  # initiate console interface and selection.
+  # this will eventually be replaces by a UI of sorts
+  puts "Welcome to Dice Roller."
+  puts "Please select the Die of your choice to roll."
+  puts "1.) Six Sided"
+  puts "2.) Eight Sided"
+  puts "3.) Ten Sided"
+  puts "4.) Twenty Sided\n\n"
+  print "Dice:> "
+  # Initiate user selection
+  input = $stdin.gets.chomp
+  if input == "1"
+    puts "Rolling a Six-sided Die..."
+    puts SIX_SIDED_DIE.roll
+  elsif input == "2"
+    puts "Rolling an Eight-sided Die."
+    puts EIGHT_SIDED_DIE.roll
+  elsif input == "3"
+    puts "Rolling a Ten-sided Die"
+    puts TEN_SIDED_DIE.roll
+  elsif input == "4"
+    puts "Rolling a Twenty-sided Die"
+    puts TWENTY_SIDED_DIE.roll
+    else
+    puts "Please enter a valid number!"
+  end
+  # need to add quantity of dice via variable
+
+end
+
+
 # experimental crit modifier
 class Crit
   puts "Critical Dice Placeholder loads successfully."
+  critical_hit = "Foo"
 end
 
 class Rollmodifier
@@ -12,7 +45,7 @@ end
 
 class Selector
   @@die = {
-    'six_sided' = 
+    'six_sided' =
   }
 
 # create the Dice class
@@ -46,31 +79,3 @@ SIX_SIDED_DIE = Dice.new(6)
 EIGHT_SIDED_DIE = Dice.new(8)
 TEN_SIDED_DIE = Dice.new(10)
 TWENTY_SIDED_DIE = Dice.new(20)
-
-# initiate console interface and selection.
-# this will eventually be replaces by a UI of sorts
-puts "Welcome to Dice Roller."
-puts "Please select the Die of your choice to roll."
-puts "1.) Six Sided"
-puts "2.) Eight Sided"
-puts "3.) Ten Sided"
-puts "4.) Twenty Sided\n\n"
-print "Dice:> "
-# Initiate user selection
-input = $stdin.gets.chomp
-if input == "1"
-  puts "Rolling a Six-sided Die..."
-  puts SIX_SIDED_DIE.roll
-elsif input == "2"
-  puts "Rolling an Eight-sided Die."
-  puts EIGHT_SIDED_DIE.roll
-elsif input == "3"
-  puts "Rolling a Ten-sided Die"
-  puts TEN_SIDED_DIE.roll
-elsif input == "4"
-  puts "Rolling a Twenty-sided Die"
-  puts TWENTY_SIDED_DIE.roll
-  else
-  puts "Please enter a valid number!"
-end
-# need to add quantity of dice via variable
