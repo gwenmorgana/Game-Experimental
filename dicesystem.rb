@@ -29,6 +29,12 @@ class Mainmenu
     puts "Please enter a valid number!"
   end
   # need to add quantity of dice via variable
+  # Establish variables to configure the sides of the die to be rolled.
+  # These will be called via $stdin until integration of the GOSU GUI
+  SIX_SIDED_DIE = Dice.new(6)
+  EIGHT_SIDED_DIE = Dice.new(8)
+  TEN_SIDED_DIE = Dice.new(10)
+  TWENTY_SIDED_DIE = Dice.new(20)
 
 end
 
@@ -72,10 +78,3 @@ class Dice < Crit
     dice_result
   end
 end
-
-# Establish variables to configure the sides of the die to be rolled.
-# These will be called via $stdin until integration of the GOSU GUI
-SIX_SIDED_DIE = Dice.new(6)
-EIGHT_SIDED_DIE = Dice.new(8)
-TEN_SIDED_DIE = Dice.new(10)
-TWENTY_SIDED_DIE = Dice.new(20)
